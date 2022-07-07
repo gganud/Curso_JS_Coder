@@ -1,10 +1,8 @@
-/* Definicion de constantes y variables */
 const items = [];
 let orden = [];
 const intTarjeta = 1.2;
 const intMpago = 1.15;
 let cantidad1=0, cantidad2=0, cantidad3=0, cantidad4=0;
-/* Definicion de class para cargar el arreglo con los items */
 class Producto{
     constructor(id, nombre, precio){
         this.id = id;
@@ -12,18 +10,15 @@ class Producto{
         this.precio = precio;
     }
 }
-/* Se construyen los productos/items */
 const producto1 = new Producto("01","Café", "200");
 const producto2 = new Producto("02","Jugo", "150");
 const producto3 = new Producto("03","Té", "180");
 const producto4 = new Producto("04","Agua", "120");
-/* Se cargan en el array */
 items.push(producto1);
 items.push(producto2);
 items.push(producto3);
 items.push(producto4);
 
-/* Funcion para seleccionar los items y cargarlos en el arreglo "Orden" */
 function seleccionItem(){
     let articulo = parseInt(prompt(`Ingrese el artículo que desea ordenar. \n1: ${items[0].nombre} - $${items[0].precio}. \n2: ${items[1].nombre} - $${items[1].precio}. \n3: ${items[2].nombre} - $${items[2].precio}. \n4: ${items[3].nombre} - $${items[3].precio}. \nPara finalizar la orden ingrese "0".`)); 
     while(articulo!=0){
@@ -71,9 +66,7 @@ function seleccionItem(){
         articulo = parseInt(prompt(`Ingrese el artículo que desea ordenar. \n1: ${items[0].nombre} - $${items[0].precio}. \n2: ${items[1].nombre} - $${items[1].precio}. \n3: ${items[2].nombre} - $${items[2].precio}. \n4: ${items[3].nombre} - $${items[3].precio}. \nPara finalizar la orden ingrese "0".`));  
     }
 }
-/* Funcion para deteminar el total ordenado en $ */
 const total = (cantCafe,cantTe,cantJugo,cantAgua) => items[0].precio*cantCafe + items[2].precio*cantTe + items[1].precio*cantJugo + items[3].precio*cantAgua;
-/* Funcion para determinar el total segun el medio de pago seleccionado */
 const pFinal = (mPago) => {
     if (mPago==1){
         return resultado;
@@ -85,12 +78,10 @@ const pFinal = (mPago) => {
         return resultado = resultado*intMpago;
     }
 }
-/* Comienzo de ejecucion */
+
 seleccionItem();
 let resultado = total(cantidad1,cantidad2,cantidad3,cantidad4);
-/* Se muestra el resumen de la orden segun los items ordenados*/
-alert(`Orden finalizada. El detalle de su orden es: \n${items[0].nombre}: ${cantidad1} u. \n${items[1].nombre}: ${cantidad2} u. \n${items[2].nombre}: ${cantidad3} u. \n${items[3].nombre}: ${cantidad4} u. \n-----------------------\nTotal: $${resultado}.`);
-/* Se selecciona el medio de pago y se muestra el total a abonar. */
+alert(`Orden finalizada. El detalle de su orden es: \n${items[0].nombre}: ${cantidad1} u. \n${items[1].nombre}: ${cantidad2} u. \n${items[2].nombre}: ${cantidad3} u. \n${items[3].nombre}: ${cantidad4} u. \n-----------------------\nTotal es: $${resultado}.`);
 let medio = parseInt(prompt(`A continuación, seleccione el medio de pago a utilizar. \n1: Contado efectivo / Tarjeta de debito. \n2: Tarjeta de credito (20% interés). \n3: Mercado Pago (15% interés).`));
 while (medio!=1 & medio!=2 & medio!=3){
     alert("Por favor ingresar un medio de pago correctamente")

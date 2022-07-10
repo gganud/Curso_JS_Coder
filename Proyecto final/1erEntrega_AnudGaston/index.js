@@ -77,7 +77,6 @@ function seleccionItem(){
         articulo = parseInt(prompt(`Ingrese el artículo que desea ordenar. \n1: ${items[0].nombre} - $${items[0].precio}. \n2: ${items[1].nombre} - $${items[1].precio}. \n3: ${items[2].nombre} - $${items[2].precio}. \n4: ${items[3].nombre} - $${items[3].precio}. \nPara finalizar la orden ingrese "0".`));  
     }
 }
-
 /* Funcion para determinar el total segun el medio de pago seleccionado */
 const pFinal = (mPago) => {
     if (mPago==1){
@@ -100,11 +99,28 @@ for (let i=0; i<orden.length; i++){
 let total = subT.reduce((acc, i)=> acc+i,0);
 /* Se muestra el resumen de la orden segun los items ordenados (momentaneamente por alert!!!)*/
 alert(`Orden finalizada. El detalle de su orden es: \n${items[0].nombre}: ${cantidad1} u. \n${items[1].nombre}: ${cantidad2} u. \n${items[2].nombre}: ${cantidad3} u. \n${items[3].nombre}: ${cantidad4} u. \n-----------------------\nTotal: $${total}.`);
+/* Se muestra el resumen de la orden segun los items ordenados (tambien por consola y ordenados alfabeticamente)*/
+orden.sort((a,b)=>{
+    if (a.nombre > b.nombre){
+        return 1;
+    }
+    if (a.nombre < b.nombre){
+        return -1;
+    }
+    return 0;
+})
+console.log(`El resumen de su pedido es:\nProducto (Precio): Cantidad\n`);
+for (let i=0; i<orden.length; i++){
+    orden[i].nombre;
+    orden[i].cantidad;
+    console.log(`${orden[i].nombre} ($${orden[i].precio}): ${orden[i].cantidad}`);
+}
+console.log(`Total: $${total}`);
 /* Se selecciona el medio de pago y se muestra el total a abonar. */
-let medio = parseInt(prompt(`A continuación, seleccione el medio de pago a utilizar. \n1: Contado efectivo / Tarjeta de debito. \n2: Tarjeta de credito (20% interés). \n3: Mercado Pago (15% interés).`));
+let medio = parseInt(prompt(`El total de su orden es de: $${total}. \nA continuación, seleccione el medio de pago a utilizar. \n1: Contado efectivo / Tarjeta de debito. \n2: Tarjeta de credito (20% interés). \n3: Mercado Pago (15% interés).`));
 while (medio!=1 & medio!=2 & medio!=3){
     alert("Por favor ingresar un medio de pago correctamente")
-    medio = parseInt(prompt(`El total de su orden es de: $${resultado}. \nSeleccione el medio de pago a utilizar. \n1: Contado efectivo / Tarjeta de debito. \n2: Tarjeta de credito (20% interés). \n3: Mercado Pago (15% interés).`));
+    medio = parseInt(prompt(`El total de su orden es de: $${total}. \nA continuación, seleccione el medio de pago a utilizar. \n1: Contado efectivo / Tarjeta de debito. \n2: Tarjeta de credito (20% interés). \n3: Mercado Pago (15% interés).`));
 }
 let totalPagar = pFinal(medio);
 alert(`El total a abonar es de: $${totalPagar.toFixed(2)}. \nMuchas gracias.`);

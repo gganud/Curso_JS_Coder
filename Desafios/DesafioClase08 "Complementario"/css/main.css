@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+main{
+    color: black;
+    text-align: justify; 
+}
+body{
+    margin: 2rem 0;
+}
+#bienvenida{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#bienvenida p{
+    display: inline;
+    border-bottom: solid 3px goldenrod;
+}
+#productosContenedorBebidas div{
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+#productosContenedorBebidas div img{
+    border: solid .2rem goldenrod;
+    border-radius: 1rem;
+}
+#productosContenedorBebidas div button{
+    font-size: 1rem;
+    padding: .4rem;
+    background-color: rgb(209, 174, 87);
+    border-radius: 1rem;
+}
+.pedido{
+    margin-top: 2rem;
+}
+#pedidoContenedor div{
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+}
+#pedidoContenedor div>*{
+    margin-left: 2rem;
+}

@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+main{
+    color: black;
+    text-align: justify; }
+#bienvenida{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#bienvenida p{
+    display: inline;
+    border-bottom: solid 3px goldenrod;
+}
+.pedido{
+    margin-top: 2rem;
+}
+#pedidoContenedor div{
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+}
+#pedidoContenedor div>*{
+    margin-left: 2rem;
+}
+/* .encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+h1{
+    border-bottom: solid 3px goldenrod;
+}
+.separador{
+    color: goldenrod;
+    font-size: larger;
+}
+.imgPpal{
+    width: 100%;
+}
+.imgPpalDesktop{
+    display: none;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    border-bottom: solid 3px goldenrod;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.categories{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    list-style: none;
+    align-items: center;
+}
+.categories li{
+    border: solid 3px black;
+    border-radius: 6px;
+    padding: .3rem;   
+}
+main{
+    background-color: whitesmoke;
+}
+h3{
+    background-color: rgb(218, 186, 107);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.precio{
+    font-weight: bold;
+    color: #ba9f1b;
+    font-size: larger;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    margin:  1rem 1rem 0;
+    padding-bottom: 1rem;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.descripcion{
+    border-bottom: 1px dotted black;
+    padding: 1rem 0;
+}
+.foto{
+    width: 100%;
+    border: solid 3px goldenrod;
+    border-radius: 6px;
+}
+footer{
+    background-color: #DBC13E;
+    text-align: center;
+}
+h5{
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+footer p{
+    padding: .3rem 0;
+}
+.redes img{
+    padding: 0 .5rem;
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+}
+.tarjetas img{
+    padding: 0 1rem;
+}
+.pie{
+    background-color: #d6c679;
+    text-align: center;
+}
+.logoB{
+    display: none;
+} */
+
+/*Comienza el mQuery tablet*/
+/* @media only screen and (min-width: 576px){
+    .logoA{
+        display: none;
+    }
+    .categories{
+        margin: 2rem 0;
+    }
+    .categoriesFooter{
+        margin: 0;    
+    }
+    .categoriesFooter .logoB{
+        border: none;
+        display: inline;
+    }
+    .producto{
+        display: grid;
+        grid-template-areas: "fotoBlock info"  
+                             "fotoBlock descripcion";
+        column-gap: 1rem;
+        margin:  1rem 1rem 0;
+        padding-bottom: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr;   
+    }
+    .fotoBlock{
+        grid-area: fotoBlock;
+    }
+    .info{
+        grid-area: info;
+        border-bottom: 1px dotted black; 
+        align-self: start;      
+    }
+    .descripcion{
+        grid-area: descripcion;
+        border-bottom: none;
+    }
+    .medioContacto {
+        display: flex;
+        justify-content: center;
+    }
+    .medioContacto p{
+        padding-left: 3rem;
+    }
+} */
+/*Comienza el mQuery desktop*/
+/* @media only screen and (min-width: 992px){
+    .imgPpalDesktop{
+        display: block;
+    }
+    .imgPpalMobile{
+        display: none;
+    }
+    .producto{    
+        grid-template-columns: .75fr 1fr;
+    }
+    .productos{
+        display: grid;
+        grid-template-areas: "producto1 producto2"  
+                             "producto3 producto4";
+        column-gap: 1rem;
+        margin:  1rem 1rem 0;
+        align-content: center;
+    }
+    .producto1{
+        grid-area: producto1;
+    }
+    .producto2{
+        grid-area: producto2;
+    }
+    .producto3{
+        grid-area: producto3;
+    }
+    .producto4{
+        grid-area: producto4;
+    }
+    .fotoBlock{
+        align-self: center;
+    }
+} */

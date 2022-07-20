@@ -1,10 +1,8 @@
 /* Definicion de constantes y variables */
 const items = [];
 let orden = [];
-let subT = [];
 const intTarjeta = 1.2;
 const intMpago = 1.15;
-let cantidad1=0, cantidad2=0, cantidad3=0, cantidad4=0;
 /* Definicion de class para cargar el arreglo con los items */
 class Producto{
     constructor(id, nombre, precio, img, descripcion, categoria){
@@ -16,16 +14,7 @@ class Producto{
         this.categoria = categoria
     }
 }
-/* Definicion de class para cargar el arreglo con la orden del pedido */
-class Pedido{
-    constructor(id, nombre, precio, cantidad){
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
-    }
-    subtotal() {return this.precio*this.cantidad}
-}
+
 /* Se construyen los productos/items  y se cargan en el arreglo*/
 items.push(new Producto(1,"Café", 200,"img/01cafe.jpeg","Descripcion del producto", "Bebidas"));
 items.push(new Producto(2,"Jugo", 150,"img/01cafe.jpeg","Descripcion del producto", "Bebidas"));
@@ -49,36 +38,12 @@ const presentacion = () => {
     }
     bienvenida.append(saludo);
 }
-/* Render de pedido/orden */
-const carritoIndex = (articuloId) =>{
-    const contenedorPedido = document.getElementById("pedidoContenedor")
-    let cantidad = 1
-    let articulo = items.find( i => i.id == articuloId)
-    orden.push(new Pedido(articulo.id,articulo.nombre,articulo.precio,cantidad))
-    
-    let div = document.createElement('div')
-    /* div.classList.add('productoEnCarrito') */
-    div.innerHTML = `<p>${articulo.nombre}</p>
-                    <p>Precio: $${articulo.precio}</p> 
-                    <p id="cantidad${articulo.id}">Cantidad: ${cantidad}</p>
-                    <button id="eliminar${articulo.id}">Eliminar</button>
-                    `
-    contenedorPedido.appendChild(div)
-    /* const eliminar = document.getElementById(`eliminar${articulo.id}`)
-    eliminar.addEventListener('click', ()=>{
-    div.remove()
-    orden.splice(orden.indexOf(articuloId),1)
-    console.log(orden);    
-        } ) */
-    
 
-}
 /* Render de productos */
-function mostrarProductos(cat){
+const mostrarProductos = (cat) => {
     const categoria = document.getElementById(`productosContenedor${cat[0].categoria}`);
     cat.forEach( i => {
         const div = document.createElement('div')
-        /* div.classList.add('card') */
         div.innerHTML += `
                          <img src="${i.img}">
                          <h5>${i.nombre}</h5>
@@ -87,13 +52,66 @@ function mostrarProductos(cat){
                          <button id=boton${i.id}><b>Agregar</b></button>
                          `
         categoria.appendChild(div)
-        /* const boton = document.getElementById(`boton${i.id}`)
+        const boton = document.getElementById(`boton${i.id}`)
         boton.addEventListener('click', ()=>{
-        carritoIndex(i.id)
-        } ) */
-    } )   
+        agregarCarrito(i)   
+        } )
+    } )
 }
+/* Render de pedido/orden */
+const mostrarCarrito = () =>{ 
+    const contenedorPedido = document.getElementById("artPedidosContenedor") 
+    contenedorPedido.textContent = ''
+    const ordenSinRepetidos = [...new Set(orden)];
+    ordenSinRepetidos.forEach(i => {
+        let articulo = items.find( elemento => elemento.id == i.id)
+        const cantidadUnidades = orden.reduce((acc, e) =>{ 
+            if (i.id == e.id){
+                return acc+=1}
+            else{
+                return acc
+            }
+            }
+            , 0) 
+        let div = document.createElement('div')
+        div.innerHTML = `<p>${articulo.nombre}</p>
+                        <p>Precio: $${articulo.precio}</p> 
+                        <p>Cantidad: ${cantidadUnidades}</p>
+                        <button id="eliminar${articulo.id}">Eliminar</button>
 
+                        `
+        contenedorPedido.appendChild(div)
+        eliminar = document.getElementById(`eliminar${articulo.id}`)
+        eliminar.addEventListener('click', ()=>{
+            eliminarArticulo(i)
+            } )       
+    })
+    totalPedido()
+    vaciar = document.getElementById(`vaciarCarrito`)
+    vaciar.addEventListener('click', ()=>{
+        orden=[]
+        mostrarCarrito()
+        } )
+    
+}
+const agregarCarrito = (art) =>{
+    orden.push(art)
+    mostrarCarrito();
+}
+const eliminarArticulo = (art) =>{
+    orden = orden.filter((e)=> e.id != art.id)
+    mostrarCarrito();
+}
+const totalPedido = () => {
+    const monto=orden.reduce((total, i)=>total+i.precio,0)
+    const tarjeta = monto*intTarjeta;
+    const mPago = monto*intMpago;
+    const totales = document.getElementById('totales');
+    totales.innerHTML = `<p>Contado efectivo : $${monto.toFixed(2)}</p>
+                        <p>Tarjeta de crédito: $${tarjeta.toFixed(2)}</p> 
+                        <p>Mercado Pago: $${mPago.toFixed(2)}</p>
+                        `
+                    }
 /* Comienzo de ejecucion */
 presentacion();
 mostrarProductos(bebidas);

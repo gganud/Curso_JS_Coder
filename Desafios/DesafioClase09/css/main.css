@@ -8,7 +8,11 @@
  }
 main{
     color: black;
-    text-align: justify; }
+    text-align: justify; 
+}
+body{
+    margin: 2rem 0;
+}
 #bienvenida{
     margin: 1rem;
     display: flex;
@@ -18,16 +22,56 @@ main{
     display: inline;
     border-bottom: solid 3px goldenrod;
 }
+#productosContenedorBebidas div{
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+#productosContenedorBebidas div img{
+    border: solid .2rem goldenrod;
+    border-radius: 1rem;
+}
+#productosContenedorBebidas div button{
+    font-size: 1rem;
+    padding: .4rem;
+    background-color: rgb(209, 174, 87);
+    border-radius: 1rem;
+}
 .pedido{
     margin-top: 2rem;
 }
-#pedidoContenedor div{
-    margin: .5rem;
-    display: flex;
-    justify-content: center;
+#artPedidosContenedor{
+    margin: 0 25rem;
 }
-#pedidoContenedor div>*{
-    margin-left: 2rem;
+#artPedidosContenedor div{
+    margin: .5rem ;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px grey;
+    padding-bottom: 1rem;
+
+}
+#artPedidosContenedor div>*{
+ flex: 1 0 0;
+}
+#artPedidosContenedor div button{
+    margin: 0 3rem;
+    font-size: 1rem;
+    padding: .4rem;
+    background-color: rgb(209, 174, 87);
+    border-radius: .5rem;
+}
+#totales>*{
+    font-size: 1.5rem;
+    text-align: end;
+    margin-right: 25rem;
+
+}
+#vaciarCarrito{
+    font-size: 1.3rem;
+    padding: .4rem;
+    background-color: whitesmoke;
+    border-radius: .7rem;
+    margin-right: 0;
 }
 /* .encabezado{
     display: flex;

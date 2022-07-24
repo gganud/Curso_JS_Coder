@@ -16,7 +16,7 @@ class Producto{
 }
 
 /* Se construyen los productos/items  y se cargan en el arreglo*/
-items.push(new Producto(1,"Café", 200,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Cafeteria"));
+items.push(new Producto(1,"Café", 200,"img/articulos/cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Cafeteria"));
 items.push(new Producto(2,"Cafe con leche", 150,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Cafeteria"));
 items.push(new Producto(3,"Té", 130,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Cafeteria"));
 items.push(new Producto(4,"Cortado", 170,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Cafeteria"));
@@ -24,11 +24,11 @@ items.push(new Producto(5,"Ensalada mixta", 300,"img/01cafe.jpeg","Lorem ipsum d
 items.push(new Producto(6,"Ensalada rusa", 370,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
 items.push(new Producto(7,"Bife de chorizo", 680,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
 items.push(new Producto(8,"Ravioles c/Fileto", 620,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
-items.push(new Producto(9,"Parrillada", 980,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
-items.push(new Producto(10,"Milanesa de ternera", 550,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
+items.push(new Producto(9,"Pizza", 980,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
+items.push(new Producto(10,"Milanesa napolitana", 550,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Comidas"));
 items.push(new Producto(11,"Jugo saborizado", 280,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Bebidas"));
 items.push(new Producto(12,"Agua", 200,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Bebidas"));
-items.push(new Producto(13,"Vino de la casa", 700,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Bebidas"));
+items.push(new Producto(13,"Vino malbec", 700,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Bebidas"));
 items.push(new Producto(14,"Gaseosa", 350,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Bebidas"));
 items.push(new Producto(15,"Copa helada", 480,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Postres"));
 items.push(new Producto(16,"Flan casero", 420,"img/01cafe.jpeg","Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", "Postres"));

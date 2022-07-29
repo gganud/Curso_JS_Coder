@@ -39,7 +39,7 @@ const mostrarCarrito = () =>{
                         </div>
                         <div class="prices">
                             <div class="amount">$${subtotal}</div>
-                            <div id="eliminar${id}" class="remove"><img src="./img/bin.png" alt=""></div>
+                            <div id="eliminar${id}" class="remove"><img src="./img/dustbin.png" alt=""></div>
                         </div>
                         
                         `;

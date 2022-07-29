@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+ }
+body{
+	background: whitesmoke;
+	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 50%;
+    background: linear-gradient(to bottom right, #ffffff, #e4d981);
+    border-radius: 1rem;
+    border: goldenrod solid 1px; 
+    padding: 2rem;
+}
+h1{
+    font-size: 5rem;
+}
+.titulo{
+    border-bottom: solid 5px goldenrod;
+    font-size: 3rem;
+}
+.logoContainer{
+    margin-top: 2rem;
+}
+.separador, span{
+    color: goldenrod;
+    font-size: larger;
+}

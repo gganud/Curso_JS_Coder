@@ -45,7 +45,10 @@ const mostrarCarrito = () =>{
                         `;
         contenedorPedido.append(div);
         const eliminar = document.getElementById(`eliminar${id}`);
-        eliminar.addEventListener('click', () => eliminarArticulo(i));
+        eliminar.addEventListener('click', () => {
+            eliminarArticulo(i);
+            
+            alertRemoveProduct (nombre)})
         const sumar = document.getElementById(`sumar${id}`);
         sumar.addEventListener('click', () => sumarArticulo(i)); 
         const restar = document.getElementById(`restar${id}`);
@@ -66,6 +69,7 @@ const agregarCarrito = (art) =>{
 const eliminarArticulo = (art) =>{
     orden = orden.filter((e)=> e != art);
     setLocalStorage();
+    
     mostrarCarrito();
 }
 const sumarArticulo = (art) =>{

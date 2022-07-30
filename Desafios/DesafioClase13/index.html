@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
 </head>
-<body>
+<body id="bodyStyle">
     <header>
         <!--1er renglon-->
-        <section class="encabezado">
+        <section id="encabezadoStyle" class="encabezado">
             <div class="encabezadoChild darkMode">
-                <img src="./img/dark-mode.png" alt="">
+                <label class="switch">
+                    <input id="checkboxDarkmode" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
             </div>
             <div class="encabezadoChild">
                 <h1 class="titulo">TOTO<span class="separador"> | </span>Resto</h1>
@@ -27,13 +30,15 @@
                 </div>
             </div>
         </section>
-    </div>
+    
     <!--foto principal-->
-    <div class="imgPpalMobile">
-        <img class="imgPpal" src="./img/bannerfull.jpg" alt="">
-    </div>
-    <div class="imgPpalDesktop">
-        <img class="imgPpal" src="./img/bannerCropped.jpg" alt="">
+    <div>
+        <div class="imgPpalMobile">
+            <img class="imgPpal" src="./img/bannerfull.jpg" alt="">
+        </div>
+        <div class="imgPpalDesktop">
+            <img class="imgPpal" src="./img/bannerCropped.jpg" alt="">
+        </div>
     </div>
     <!--Categorias del menu-->
     <nav>
@@ -102,8 +107,8 @@
     <script src="./js/articulos.js"></script>
     <script src="./js/renderProductos.js"></script>
     <script src="./js/renderCarrito.js"></script>
-    <script src="./js/alerts.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/alerts.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

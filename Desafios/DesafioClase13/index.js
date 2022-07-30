@@ -15,5 +15,5 @@ checkbox.addEventListener("click", (e) => {
         encabezadoStyle.classList.remove('darkModeStyle');
     }
   });
-/* welcome() */
+welcome()
     

@@ -317,6 +317,13 @@ hr{
 	cursor: pointer;
     padding-right: 1rem;
 }
+.nombreCliente{
+    font-size: 1rem;
+	font-weight: bold;
+	margin-right: .5rem;
+	padding: .5rem;
+	opacity: .7;
+}
 .montoPedido{
 	font-size: 1rem;
 	font-weight: bold;

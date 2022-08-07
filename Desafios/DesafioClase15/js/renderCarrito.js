@@ -14,7 +14,7 @@ const mostrarCarrito = () =>{
     ordenSinRepetidos.sort((a, b) => a - b);
     const cantidadCompra = orden.length
     const cantidadPedido = document.getElementById("cantidadPedido")
-    cantidadPedido.innerHTML = `${cantidadCompra}` 
+    cantidadPedido.innerHTML = `${cantidadCompra}`
     ordenSinRepetidos.forEach(i => {
         let articulo = items.find( elemento => elemento.id == i);
         /* Desetruturacion del objeto articulo */

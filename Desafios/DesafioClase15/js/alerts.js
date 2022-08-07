@@ -1,3 +1,8 @@
+const nombreCliente = (name) => {
+  const nombreCliente = document.getElementById("nombreCliente")
+  nombreCliente.innerHTML = `${name}`
+  localStorage.setItem("nombre", name);
+}
 /* Bienvenida al local */
 const welcome = () => {
   Swal
@@ -28,7 +33,7 @@ const welcome = () => {
             confirmButtonText: "Aceptar",
             confirmButtonColor: 'goldenrod',
           })
-          
+          nombreCliente(resultado.value);
       }
   });
 }

@@ -14,4 +14,3 @@ checkbox.addEventListener("click", (e) => {
   });
 /* Carga de productos en el body*/
 loadProducts();
-    

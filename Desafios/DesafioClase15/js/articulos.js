@@ -21,5 +21,14 @@ const loadProducts = async () => {
     mostrarProductos()
     /* Agregado de operador OR y Ternario */
     orden = JSON.parse(localStorage.getItem('pedido')) || []
-    orden!="" ? mostrarCarrito() : welcome();
+    if (orden!="") {mostrarCarrito()
+    const nombre = localStorage.getItem('nombre');
+    const nombreCliente = document.getElementById("nombreCliente");
+    nombreCliente.innerHTML = `${nombre}`; 
+}
+else {
+    const nombreCliente = document.getElementById("nombreCliente");
+    nombreCliente.innerHTML = `Nuevo Cliente`; 
+    welcome()
+}
 }

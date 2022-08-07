@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTO | Resto - Home</title>
+    <link rel="icon" href="./img/logoMini.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body id="bodyStyle">
+    <header>
+        <!--1er renglon-->
+        <section id="encabezadoStyle" class="encabezado">
+            <div class="encabezadoChild darkMode">
+                <label class="switch">
+                    <input id="checkboxDarkmode" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="encabezadoChild">
+                <h1 class="titulo">TOTO<span class="separador"> | </span>Resto</h1>
+            </div>
+            <div id="abrirModal" class="botonCarrito encabezadoChild">
+                <p id="montoPedido" class="montoPedido">$0.00</p>
+                <div class="campana" >
+                    <p id="cantidadPedido" class="cantidadPedido">0</p>
+                    <img src="./img/bell-ring.png" alt="">
+                </div>
+            </div>
+        </section>
+    
+    <!--foto principal-->
+    <div>
+        <div class="imgPpalMobile">
+            <img class="imgPpal" src="./img/bannerfull.jpg" alt="">
+        </div>
+        <div class="imgPpalDesktop">
+            <img class="imgPpal" src="./img/bannerCropped.jpg" alt="">
+        </div>
+    </div>
+    <!--Categorias del menu-->
+    <nav>
+        <div class="subtitulo">
+            <a name="home"><h2 class="titulo">Menu</h2></a>
+        </div>
+        <ul id="categoriesMenu" class="categories">
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="menu"></div>
+    <div id="cart" class="cart">
+        <div class="cartContainer">
+               <div class="header">
+                <h3 class="heading">Tu pedido</h3>
+                <h5 id="vaciarCarrito" class="action">Vaciar todo</h5>
+               </div>
+               <div id="artPedidosContenedor">
+               </div>
+             <hr> 
+            <div id="checkout" class="checkout"></div>
+        </div>
+    </div>
+</main>
+<footer>
+    <!--logo home-->
+    <div>
+            <a href="#home">
+                <img src="./img/logo.png" alt="">
+            </a>  
+        </div>
+        <div>
+            <h5>Contáctanos</h5>
+            <div class="medioContacto">
+                <p>Teléfono</p>
+                <p>Mail</p>
+                <p>Dirección</p>
+                <p>Horario</p>
+            </div>
+        </div>
+        <!--redes sociales-->
+        <h5>Redes Sociales</h5>
+        <div class="redes">
+            <img src="./img/facebook.png" alt="">
+            <img src="./img/whatsapp.png" alt="">
+            <img src="./img/instagram.png" alt="">
+            <img src="./img/email.png" alt="">
+        </div>
+        <!--Medios de pago-->
+        <h5>Medios de pago</h5>
+        <div class="tarjetas">
+            <img src="./img/credit-card1.png" alt="">
+            <img src="./img/credit-card1.png" alt="">
+            <img src="./img/credit-card1.png" alt="">
+            <img src="./img/credit-card1.png" alt="">
+        </div>
+        <!--derechos reservados-->
+        <div class="pie">
+            <p>Todos los derechos reservados.</p>
+            <p>Diseño: Gastón anud</p>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/categorias.js"></script>
+    <script src="./js/articulos.js"></script>
+    <script src="./js/renderProductos.js"></script>
+    <script src="./js/renderCarrito.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/alerts.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -52,4 +52,4 @@ Se reconocen las siguiente mejoras a implementar en las poteriores versiones del
 
 
 ## Contacto <a name="contact"/>
-Created by [@gastonanud](www.linkedin.com/in/gaston-anud/) - Ponte en contacto conmigo!
+Created by [_@gastonanud_](www.linkedin.com/in/gaston-anud/) - Ponte en contacto conmigo!

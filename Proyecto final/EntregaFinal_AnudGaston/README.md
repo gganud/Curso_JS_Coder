@@ -6,12 +6,12 @@
 * [Información General](#generalinformation)
 * [Tecnologías utilizadas](#technologies-used)
 * [Screenshots](#screenshots)
-* [Estado del proyecto](#project-status)
-* [Mejoras detectadas](#room-for-improvement)
+* [Estado del proyecto](#status)
+* [Mejoras detectadas](#mejoras)
 * [Contacto](#contact)
 
 
-## Información General
+## Información General <a name="generalinformation"/>
 El proyecto se enmarca dentro del aprendizaje de JavaScript a traves del curso de CoderHouse del mismo.
 Se pretende poner en practica las diferentes herramientas del lenguaje aprendidads a lo largo del curso. Incluye:
 - Control de flujos
@@ -27,23 +27,23 @@ Se pretende poner en practica las diferentes herramientas del lenguaje aprendida
 - Promises y asincronía
 - Fetch y AJAX
 
-## Tecnologías utilizadas
+## Tecnologías utilizadas <a name="technologies-used"/>
 - HTML
 - CSS
 - JavaScript
 - Librerias (SwiftAlert)
 
 
-## Screenshots
+## Screenshots <a name="screenshots"/>
 ![Ejemplo de screenshot](./img/screenshot.png)
 
 
-## Estado del proyecto
+## Estado del proyecto <a name="status"/>
 El proyecto se encuentra finalizado. Las diferentes versiones del mismo se citan a continuación.
 - v1.0: Listo para entrega y corrección.
 
 
-## Mejoras detectadas
+## Mejoras detectadas <a name="mejoras"/> 
 Se reconocen las siguiente mejoras a implementar en las poteriores versiones del mismo
 
 - Optimizacon del CSS para un mejor aspecto del modo "Oscuro"

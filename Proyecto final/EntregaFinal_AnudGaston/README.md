@@ -52,4 +52,4 @@ Se reconocen las siguiente mejoras a implementar en las poteriores versiones del
 
 
 ## Contacto <a name="contact"/>
-Created by [_@gastonanud_](https://toto-resto.netlify.app) - Ponte en contacto conmigo!
+Created by [_@gastonanud_](https://www.linkedin.com/in/gaston-anud/) - Ponte en contacto conmigo!

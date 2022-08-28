@@ -13,7 +13,6 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-* [Pepe](#pepa)
 <!-- * [License](#license) -->
 
 
@@ -79,13 +78,5 @@ Give credit here.
 - Many thanks to...
 
 
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-## Pepe
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Contact <a name="contact"/>
+Created by [@gastonanud](www.linkedin.com/in/gaston-anud/) - Ponte en contacto conmigo!

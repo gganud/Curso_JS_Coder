@@ -4,15 +4,11 @@
 
 ## Tabla de contenidos
 * [Información General](#generalinformation)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
+* [Tecnologías utilizadas](#technologies-used)
 * [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
+* [Estado del proyecto](#project-status)
+* [Mejoras detectadas](#room-for-improvement)
+* [Contacto](#contact)
 
 
 ## Información General
@@ -42,12 +38,12 @@ Se pretende poner en practica las diferentes herramientas del lenguaje aprendida
 ![Ejemplo de screenshot](./img/screenshot.png)
 
 
-## Project Status
+## Estado del proyecto
 El proyecto se encuentra finalizado. Las diferentes versiones del mismo se citan a continuación.
 - v1.0: Listo para entrega y corrección.
 
 
-## Mejoras
+## Mejoras detectadas
 Se reconocen las siguiente mejoras a implementar en las poteriores versiones del mismo
 
 - Optimizacon del CSS para un mejor aspecto del modo "Oscuro"
@@ -55,5 +51,5 @@ Se reconocen las siguiente mejoras a implementar en las poteriores versiones del
 - Envio de resumen de compra al cliente mediante correo electronico o telegram.
 
 
-## Contact <a name="contact"/>
+## Contacto <a name="contact"/>
 Created by [@gastonanud](www.linkedin.com/in/gaston-anud/) - Ponte en contacto conmigo!

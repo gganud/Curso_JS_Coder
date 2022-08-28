@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1, 
+        "nombre": "Café", 
+        "precio": 200, 
+        "img": "img/articulos/cafe.jpeg", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Cafetería"
+    }, 
+    {
+        "id": 2, 
+        "nombre": "Café con leche", 
+        "precio": 150, 
+        "img": "img/articulos/cafeconleche.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Cafetería"
+    },
+    {
+        "id": 3, 
+        "nombre": "Té", 
+        "precio": 130, 
+        "img": "img/articulos/te.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Cafetería"
+    },
+    {
+        "id": 4, 
+        "nombre": "Cortado", 
+        "precio": 170, 
+        "img": "img/articulos/cortado.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Cafetería"
+    },
+    {
+        "id": 5, 
+        "nombre": "Ensalada mixta", 
+        "precio": 300, 
+        "img": "img/articulos/mixta.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 6, 
+        "nombre": "Ensalada rusa", 
+        "precio": 370, 
+        "img": "img/articulos/rusa.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 7, 
+        "nombre": "Bife de chorizo", 
+        "precio": 680, 
+        "img": "img/articulos/bife.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 8, 
+        "nombre": "Ravioles c/Fileto", 
+        "precio": 620, 
+        "img": "img/articulos/raviolesfileto.png", "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 9, 
+        "nombre": "Pizza", 
+        "precio": 980, 
+        "img": "img/articulos/pizza.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 10, 
+        "nombre": "Milanesa napolitana", 
+        "precio": 550, 
+        "img": "img/articulos/napolitana.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Comidas"
+    },
+    {
+        "id": 11, 
+        "nombre": "Jugo saborizado", 
+        "precio": 280, 
+        "img": "img/articulos/saborizada.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 12, 
+        "nombre": "Agua", 
+        "precio": 200, 
+        "img": "img/articulos/agua.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 13, 
+        "nombre": "Vino malbec", 
+        "precio": 700, 
+        "img": "img/articulos/vinolatitud33.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 14, 
+        "nombre": "Gaseosa", 
+        "precio": 350, 
+        "img": "img/articulos/saborizada.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 15, 
+        "nombre": "Copa helada", 
+        "precio": 480, 
+        "img": "img/articulos/copahelada.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Postres"
+    },
+    {
+        "id": 16, 
+        "nombre": "Flan casero", 
+        "precio": 420, 
+        "img": "img/articulos/flan.png", 
+        "descripcion":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos velit possimus, cumque quas aliquid", 
+        "categoria": "Postres"
+    }
+]

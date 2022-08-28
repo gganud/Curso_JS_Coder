@@ -1,5 +1,5 @@
 # Toto-Resto
-> Sitio web con la carte del restaurante y la posibilidad de sumular la compra para saber cual sera el valor del pedido.
+> Sitio web con la carta del restaurante y la posibilidad de simular la compra para saber cual sera el valor del pedido con diferentes opciones de pago.
 > Demo del sitio: [_Aquí_](https://toto-resto.netlify.app).
 
 ## Tabla de contenidos
@@ -13,17 +13,23 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-* [Pepe](#pepa)
-<!-- * [License](#license) -->
 
 
 ## Información General
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+El proyecto se enmarca dentro del aprendizaje de JavaScript a traves del curso de CoderHouse del mismo.
+Se pretende poner en practica las diferentes herramientas del lenguaje aprendidads a lo largo del curso. Incluye:
+- Control de flujos
+- Ciclos e iteraciones mediante for y while
+- Arrays
+- Objetos
+- Funciones y arrow functions
+- Funciones de orden superior
+- Local Storage y uso de JSON
+- DOM
+- Eventos
+- Librerias
+- Promises y asincronía
+- Fetch y AJAX
 
 ## Tecnologías utilizadas
 - HTML
@@ -32,51 +38,21 @@
 - Librerias (SwiftAlert)
 
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
 ## Screenshots
 ![Ejemplo de screenshot](./img/screenshot.png)
 
 
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+El proyecto se encuentra finalizado. Las diferentes versiones del mismo se citan a continuación.
+- v1.0: Listo para entrega y corrección.
 
 
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+## Mejoras
+Se reconocen las siguiente mejoras a implementar en las poteriores versiones del mismo
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Optimizacon del CSS para un mejor aspecto del modo "Oscuro"
+- Implementación de la opción de pago directamente desde el sitio.
+- Envio de resumen de compra al cliente mediante correo electronico o telegram.
 
 
 ## Contact <a name="contact"/>

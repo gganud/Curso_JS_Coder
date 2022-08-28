@@ -1,9 +1,9 @@
 # Toto-Resto
 > Sitio web con la carte del restaurante y la posibilidad de sumular la compra para saber cual sera el valor del pedido.
-> Live demo [_here_](https://toto-resto.netlify.app).
+> Demo del sitio: [_Aquí_](https://toto-resto.netlify.app).
 
-## Table of Contents
-* [General Info](#general-information)
+## Tabla de contenidos
+* [Información General](#generalinformation)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
@@ -13,10 +13,11 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
+* [Pepe](#pepa)
 <!-- * [License](#license) -->
 
 
-## General Information
+## Información General
 - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
@@ -24,10 +25,11 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+## Tecnologías utilizadas
+- HTML
+- CSS
+- JavaScript
+- Librerias (SwiftAlert)
 
 
 ## Features
@@ -38,8 +40,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot2.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Ejemplo de screenshot](./img/screenshot2.png)
 
 
 ## Setup
@@ -81,6 +82,7 @@ Give credit here.
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
 
+## Pepe
 
 <!-- Optional -->
 <!-- ## License -->
